@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/95a5f1d071.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="maxWidth">
+      <nav id="nav" class="row">
+        <img src="assets/images/logo.png" alt="Logo da página" />
+      </nav>
+
+      <div class="sobreNos row">
+        <div class="sobreNos_conteudo">
+          <h2 class="uppercase">Sobre nós</h2>
+
+          <p>
+            O <strong>Instituto Sorriso</strong> nasceu com o propósito de levar
+            <b>alegria</b> e <b>esperança</b> a crianças em situação de
+            vulnerabilidade. Acreditamos que pequenos gestos podem transformar
+            vidas e, por isso, organizamos ações simples e impactantes, como
+            <b>distribuição de brinquedos</b>, <b>festas comunitárias</b> e
+            <b>visitas a hospitais</b>. Nosso foco está no
+            <b>bem-estar emocional</b> e na
+            <b>criação de momentos inesquecíveis</b>, sempre guiados pelo valor
+            do <b>sorriso</b> e da <b>solidariedade</b>. Juntos, construímos um
+            futuro mais leve e feliz para quem mais precisa.
+          </p>
+        </div>
+
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/sNA3oqaIJ8c?si=33iL3lWbdNUUiS8O"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="principios row">
+        <div class="principios_geral">
+          <div class="principios_icone">
+            <i class="fa-solid fa-eye"></i>
+            <h3 class="uppercase">Visão</h3>
+          </div>
+
+          <p>
+            Levar <b>alegria</b> e <b>esperança</b> a todas as crianças em
+            vulnerabilidade, criando um futuro onde cada
+            <strong>sorriso</strong> simbolize transformação e acolhimento.
+          </p>
+        </div>
+
+        <div class="principios_geral">
+          <p>
+            Promover momentos de <b>alegria</b> e <b>acolhimento</b> para
+            crianças em vulnerabilidade, através de ações simples que gerem
+            impacto positivo e emocional.
+          </p>
+
+          <div class="principios_icone">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3 class="uppercase">Missão</h3>
+          </div>
+        </div>
+
+        <div class="principios_geral">
+          <div class="principios_icone">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+            <h3 class="uppercase">Valores</h3>
+          </div>
+
+          <p>
+            Acreditamos na <b>solidariedade</b>, <b>empatia</b> e na
+            <b>força</b> dos pequenos gestos, que juntos transformam vidas e
+            criam um mundo mais acolhedor
+          </p>
+        </div>
+      </div>
+
+      <div class="premios row">
+        <img
+          src="assets/images/melhores-ong-2023.png"
+          alt="Prêmio melhores ONGs 2023"
+        />
+
+        <img
+          src="assets/images/melhores-ong-2021.png"
+          alt="Prêmio melhores ONGs 2021"
+        />
+      </div>
+
+      <div class="parceiros row">
+        <h2 class="uppercase">Nossos parceiros</h2>
+        <div class="parceiros_imagens">
+          <img
+            src="assets/images/associacao-lar-crianca-feliz.png"
+            alt="Associação Lar Criança Feliz"
+          />
+
+          <img src="assets/images/rihappy.jpg" alt="Logo RiHappy" />
+        </div>
+      </div>
+
+      <div class="formulario row">
+        <h2 class="uppercase">Faça sua doação</h2>
+        <form action="post">
+          <input
+            type="text"
+            id="cpfcnpj"
+            name="cpfcnpj"
+            placeholder="CPF"
+            oninput="formatCPF(this)"
+            maxlength="14"
+          />
+          <input type="text" placeholder="Nome completo" />
+          <input
+            type="text"
+            id="telefone"
+            name="telefone"
+            placeholder="Telefone"
+            oninput="formatTelefone(this)"
+          />
+          <input type="email" placeholder="E-mail" />
+          <input
+            type="text"
+            id="valor"
+            name="valor"
+            placeholder="R$ 0,00"
+            oninput="formatCurrency(this)"
+            required
+          />
+          <input type="submit" class="uppercase" />
+        </form>
+      </div>
+
+      <div class="localizacao row">
+        <h2 class="uppercase">Localização</h2>
+
+        <div class="icones">
+          <div class="icones_flex">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h3>E-mail</h3>
+              <a
+                href="mailto:institutosorriso@gmail.com.br?
+                "
+                >institutosorriso@gmail.com.br</a
+              >
+            </div>
+          </div>
+          <div>
+            <div class="icones_flex">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <h3>Telefone</h3>
+                <p>(11) 98553-5261</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="icones_flex">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Endereço</h3>
+                <p>R. Padre José Vieira de Matos, 74 - Artur Alvim</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8679.918843339803!2d-46.48303899272294!3d-23.544458823309174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce672682c3c295%3A0xf1751ec103cdcde3!2sR.%20Padre%20Jos%C3%A9%20Vieira%20de%20Matos%2C%2074%20-%20Artur%20Alvim%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003590-010!5e1!3m2!1spt-BR!2sbr!4v1726794262734!5m2!1spt-BR!2sbr"
+          width="100%"
+          height="250"
+          style="border: 0; margin: 0 auto"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="localizacao_mapa"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
